@@ -1,0 +1,206 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  /* height: 3vh; */
+
+  background: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://cdn.trell.co/w=640,h=640,fit=scale-down/format=png/user-images/images/orig/WNEJWbNin5YawKrW15PUyqY2z2lxzi71.png");
+
+  color: white;
+  width: 100%;
+  max-width: 100%;
+  padding-bottom: 0.5vmax;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.4vmax 1vmax;
+  /* position: absolute;
+  top: 0;
+  left: 0; */
+}
+nav > div {
+  width: 40%;
+  display: flex;
+  align-items: center;
+}
+nav > div:first-child {
+  justify-content: flex-start;
+}
+nav > div:last-child {
+  justify-content: flex-end;
+}
+
+/*  */
+.toggle-bar-btn {
+  margin-left: 1vmax;
+  font-size: 2.5vmax;
+  color: rgb(151, 151, 151);
+  font-weight: bolder;
+  position: relative;
+}
+.toggled-nav-container {
+  z-index: 100;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 20vmax;
+  background-color: rgb(33, 33, 33);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  border-radius: 10px;
+}
+.toggled-nav-container > ul {
+  width: 100%;
+}
+.toggled-nav-container > ul:first-child > li {
+  font-size: 1.2vmax;
+  font-family: "Poppins", sans-serif;
+  padding: 1vmax;
+  color: white;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+.toggled-nav-container > ul:first-child > li:hover {
+  background-color: rgb(44, 44, 44);
+}
+.toggled-nav-container > ul:last-child {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1vmax;
+}
+.toggled-nav-container > ul:last-child > li {
+  cursor: pointer;
+}
+
+/*  */
+.change-language-btn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 2vmax;
+}
+.change-language-btn > span {
+  font-size: 1.1vmax;
+}
+.btn {
+  background: rgb(163, 47, 134);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 47, 134, 1) 55%,
+    rgba(249, 143, 65, 1) 100%
+  );
+  color: white;
+  padding: 0.8vmax 1.1vmax;
+  border-radius: 18px;
+  font-weight: 500;
+  font-size: 1vmax;
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+}
+.header-Info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100%;
+  padding: 1vmax;
+  margin-top: 15px;
+}
+.header-Info-container > h1 {
+  font-size: 1.2vmax;
+  letter-spacing: 0.5px;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+}
+.header-btn-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 40%;
+}
+.header-btn-container > button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-btn-container > button > svg,
+.btn-2 > svg {
+  font-size: 1.5vmax;
+  margin-right: 8px;
+}
+.btn-2 {
+  padding: 0.5vmax 2vmax;
+  border-radius: 25px;
+  background: rgba(163, 47, 134, 0.4);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 47, 134, 0.4) 55%,
+    rgba(249, 143, 65, 0.4) 100%
+  );
+  transition: 0.3s;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.btn-2:hover {
+  background: rgb(163, 47, 134);
+  background: linear-gradient(
+    90deg,
+    rgba(163, 47, 134, 1) 55%,
+    rgba(249, 143, 65, 1) 100%
+  );
+}
+.btn-2 > span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn-2 > span > p:first-child {
+  font-size: 0.6vmax;
+  letter-spacing: 0.3px;
+}
+
+.btn-2 > span > p:last-child {
+  font-size: 0.9vmax;
+  font-weight: bold;
+}
+
+.ScrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+  font-size: 2.5vmax;
+  background-color: white;
+  border-radius: 100%;
+  padding: 0.5vmax;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  transition: 0.3s all ease;
+  z-index: 200;
+  display: none;
+  color: crimson;
+  border: 3px solid white;
+}
+.ScrollToTopBtn:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.show-scroller {
+  display: flex;
+}

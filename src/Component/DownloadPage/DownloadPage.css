@@ -1,0 +1,90 @@
+.downloadPage {
+  height: 100vh;
+  width: 100vw;
+  max-width: 100%;
+  position: relative;
+}
+.downloadPage > video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -100;
+  filter: brightness(60%);
+}
+.dp-info-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.head-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2.5vmax;
+}
+.head-block > img {
+  width: 7vmax;
+  height: 7vmax;
+  border-radius: 10px;
+}
+.head-block > p {
+  font-size: 1vmax;
+  color: white;
+  padding: 0.5vmax;
+}
+.main-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  font-size: 2vmax;
+  font-family: "Poppins", sans-serif;
+  margin-top: 3vmax;
+  width: 50%;
+  font-weight: 500;
+}
+.main-block > p {
+  margin-bottom: 4vmax;
+  text-align: center;
+}
+.download-btns-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+}
+.download-btns-container > a {
+  width: 45%;
+  padding: 0.5vmax 1vmax;
+}
+
+.footer-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vmax;
+  width: 100%;
+}
+.footer-block > button {
+  width: 25%;
+  animation: borderanimation 5s infinite linear;
+}
+
+@keyframes borderanimation {
+  0% {
+    color: white;
+  }
+  50% {
+    color: yellow;
+  }
+  100% {
+    color: yellowgreen;
+  }
+}

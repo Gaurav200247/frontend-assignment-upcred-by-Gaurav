@@ -1,0 +1,79 @@
+.tabs-switch-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  z-index: 200;
+}
+.tabs-switch-container > ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+}
+.tab-btn {
+  padding: 0.9vmax;
+  padding-bottom: 0.5vmax;
+  font-family: "Poppins", sans-serif;
+  color: rgb(49, 49, 49);
+  letter-spacing: 0.5px;
+  font-weight: 900;
+  cursor: pointer;
+  font-size: 1vmax;
+  transition: 0.3s all ease;
+  border-bottom: 3px solid white;
+}
+.active {
+  border-bottom: 3px solid crimson;
+  transition: 0.3s all ease;
+}
+.tab-switch-blocks {
+  justify-content: space-between;
+  align-items: center;
+  width: 20%;
+
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+.show {
+  display: flex;
+  visibility: visible;
+  opacity: 1;
+}
+.Stick {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-width: 100%;
+}
+
+.btn-3 {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 1vmax;
+  padding: 0.2vmax 1vmax;
+  border-radius: 20px;
+}
+.btn-3 > svg {
+  margin-right: 15px;
+}
+.btn-3 > span {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.btn-3 > span > p:first-child {
+  font-size: 0.6vmax;
+  letter-spacing: 0.3px;
+}
+
+.btn-3 > span > p:last-child {
+  font-size: 0.9vmax;
+  font-weight: bold;
+}
